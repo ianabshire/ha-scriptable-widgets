@@ -1,6 +1,3 @@
-// Variables used by Scriptable.
-// These must be at the very top of the file. Do not edit.
-// icon-color: deep-green; icon-glyph: magic;
 /* Adapted from m33x: https://gist.github.com/m33x/62f6e8f6eab546e4b3a854695ea8c3a8 */
 
 
@@ -15,9 +12,9 @@ Script.complete();
 async function createWidget(items) {
     /* Get data from API */
 
-    let req = new Request("http://homeassistant.local:8123/api/states")
+    let req = new Request("http://<YOUR HASS IP>/api/states")
     
-    req.headers = { "Authorization": "Bearer ***REMOVED***", "content-type": "application/json" }
+    req.headers = { "Authorization": "Bearer <YOUR Long-Lived Access Token at http://<HASS IP>/profile>", "content-type": "application/json" }
     let json = await req.loadJSON();
     //console.log(json) // for debugging
 
