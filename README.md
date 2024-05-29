@@ -7,6 +7,8 @@ Scripts for creating iOS widgets to display Home Assistant sensors via the [Scri
 4. Modify script to get the state and/or attributes from sensor entity you're interested in.
 5. Add Scriptable widget in iOS and select your script.
 
+Adapted from m33x: [https://gist.github.com/m33x/62f6e8f6eab546e4b3a854695ea8c3a8](https://gist.github.com/m33x/62f6e8f6eab546e4b3a854695ea8c3a8)
+
 # Examples
 
 1. Washer/Dryer Status
